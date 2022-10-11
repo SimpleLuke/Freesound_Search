@@ -23,7 +23,7 @@ function App() {
       const response = await fetch(url, {
         method: "GET",
         headers: {
-          Authorization: "Token a7KqVhv7qs1eY1xYWR1MQvT1tkngKuZOTPfHBR3H",
+          Authorization: process.env.REACT_APP_FREE_SOUND_TOKEN,
         },
       });
       const data = await response.json();
@@ -89,11 +89,11 @@ function App() {
   }
 
   if (error) {
-    content = <p>{error}</p>;
+    content = <p className="mx-auto font-mono">{error}</p>;
   }
 
   if (isLoading) {
-    content = <p className="mx-auto">Loading...</p>;
+    content = <p className="mx-auto font-mono">Loading...</p>;
   }
 
   return (
