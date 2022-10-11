@@ -2,9 +2,9 @@ import React from "react";
 
 const Sound = (props) => {
   return (
-    <li>
+    <li className="font-mono">
       <a
-        href="?"
+        href="#foo"
         onClick={() => props.soundPlayer(props.title, props.previews)}
       >
         {props.title}

@@ -93,16 +93,34 @@ function App() {
   }
 
   if (isLoading) {
-    content = <p>Loading...</p>;
+    content = <p className="mx-auto">Loading...</p>;
   }
 
   return (
-    <Fragment>
-      <form onSubmit={formSubmitHandler}>
-        <input type="text" ref={inputRef} disabled={isLoading} />
+    <div className="container mt-10 mx-auto">
+      <h1 className="font-mono text-6xl text-gray-50 font-bold text-center ">
+        Find Out Your Sound!
+      </h1>
+      <form
+        className="flex mt-10 justify-center content-center flex-col font-mono"
+        onSubmit={formSubmitHandler}
+      >
+        <input
+          className="w-6/12 mx-auto text-center h-10"
+          type="text"
+          ref={inputRef}
+          disabled={isLoading}
+        />
+        <input
+          type="submit"
+          className="w-6/12 mx-auto bg-sky-500/30 hover:pointer h-10 text-gray-50 hover:opacity-100 font-mono font-bold cursor-pointer "
+          value={"Enter"}
+        />
       </form>
-      <section>{content}</section>
-    </Fragment>
+      <section className="flex flex-col justify-center content-center  mt-20 text-gray-50 text-lg">
+        {content}
+      </section>
+    </div>
   );
 }
 

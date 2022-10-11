@@ -22,7 +22,7 @@ const SoundsList = (props) => {
   };
 
   return (
-    <Fragment>
+    <div className="mx-auto w-6/12">
       <ul>
         {props.sounds.map((sound) => (
           <Sound
@@ -33,21 +33,21 @@ const SoundsList = (props) => {
           />
         ))}
       </ul>
-      <button onClick={props.prev} disabled={props.isLoading}>
+      <button className="mr-10" onClick={props.prev} disabled={props.isLoading}>
         &lt;
       </button>
       <button onClick={props.next} disabled={props.isLoading}>
         &gt;
       </button>
-      {title && <p>Now playing: {title}</p>}
+      {title && <p className="font-mono mt-10">Now playing: {title}</p>}
       {previews && (
-        <audio controls autoPlay ref={audioRef}>
+        <audio className="font-mono mt-5" controls autoPlay ref={audioRef}>
           {Object.keys(previews).map((key) => (
             <source key={key} src={previews[key]} />
           ))}
         </audio>
       )}
-    </Fragment>
+    </div>
   );
 };
 
