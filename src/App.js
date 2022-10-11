@@ -98,9 +98,12 @@ function App() {
 
   return (
     <div className="container mt-10 mx-auto">
-      <h1 className="font-mono text-6xl text-gray-50 font-bold text-center ">
-        Find Out Your Sound!
+      <h1 className="font-mono text-7xl text-gray-50 font-bold text-center ">
+        Freesound Search
       </h1>
+      {/* <h2 className="font-mono text-3xl text-gray-50 mt-10 font-bold text-center ">
+        Find out your sound!
+      </h2> */}
       <form
         className="flex mt-10 justify-center content-center flex-col font-mono"
         onSubmit={formSubmitHandler}
