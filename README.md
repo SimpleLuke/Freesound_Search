@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Click here](https://radiant-twilight-3dee2b.netlify.app/)
+- Live Site: [Click here](https://radiant-twilight-3dee2b.netlify.app/)
 
 ### Built with
 
@@ -37,6 +37,6 @@ Users should be able to:
 ## Author
 
 - Website - [Luke Lai](https://lukelai.tech/)
-- Frontend Mentor - [@SimpleLuke](https://www.frontendmentor.io/profile/SimpleLuke)
+- LinkedIn - [Luke Lai](https://www.linkedin.com/in/luke-lai-309a3522b/)
 - Twitter - [@LukeLaiDev](https://www.twitter.com/LukeLaiDev)
 
